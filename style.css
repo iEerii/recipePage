@@ -1,0 +1,149 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --darkRaspberry: rgb(123, 40, 79); 
+    --White: hsl(0, 0%, 100%);
+    --roseWhite: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --lightGrey: hsl(30, 18%, 87%);
+    --wengeBrown: hsl(30, 10%, 34%);
+    --darkCharcoal: hsl(24, 5%, 18%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--eggshell);
+    justify-content: center;
+    display: flex;
+}
+
+h1 {
+    font-family: "Young Serif", serif;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-top: 1rem;
+}
+
+h2 {
+    color: var(--Nutmeg);
+    font-family: "Young Serif", serif;
+    font-weight: 200;
+    margin: 1rem 0;
+}
+
+span {
+    font-weight: 600;
+}
+
+li {
+    color: var(--wengeBrown);
+    font-family: "Outfit", sans-serif;
+    padding-left: 1.5rem;
+}
+
+hr {
+    border-color: var(--lightGrey);
+    border-top: none;
+    height: .1rem;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.container {
+    background-color: var(--White);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+    padding: 2.5rem;
+    width: 50rem;
+}
+
+.container__picture img {
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.container__header p {
+    color: var(--wengeBrown);
+    font-family: "Outfit", sans-serif;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+.container__ingredients-direction {
+    background-color: var(--roseWhite);
+    border-radius: 1rem;;
+    font-family: "Outfit", sans-serif;
+    padding: 1rem;
+}
+
+.container__ingredients-direction p {
+    color: var(--darkRaspberry);
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: .5rem;
+}
+
+.container__ingredients ul,
+.container__direction ol {
+    font-family: "Outfit", sans-serif;
+    line-height: 2;
+    padding-left: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+.marker li::marker {
+    color: var(--Nutmeg);
+}
+
+.marker li {
+    list-style-type: square;
+}
+
+.container__ingredients-direction ul li::marker {
+    color: var(--darkRaspberry);
+}
+
+.container__direction ol li::marker {
+    color: var(--Nutmeg);
+    font-weight: 700;
+}
+
+.container__nutrition {
+    color: var(--wengeBrown);
+    font-family: "Outfit", sans-serif;
+}
+
+.container__nutrition-facts {
+    color: var(--wengeBrown);
+    display: flex;
+    flex-direction: column;
+    font-family: "Outfit", sans-serif;
+    margin-top: 1rem;
+}
+
+.facts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 1rem;
+}
+
+.facts p{
+    padding-left: 1rem;
+}
+
+.calories {
+    color: var(--Nutmeg);
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+}
